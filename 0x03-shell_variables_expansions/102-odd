@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(ls -1) | tr ' ' '\n'
+printf "$(ls -1)"
