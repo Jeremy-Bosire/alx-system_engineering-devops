@@ -4,6 +4,7 @@ number=0
 while [ $number -lt 10 ]
 do
 	if [ $number -eq 8 ]; then
+		echo "Best School"
 		echo "Hi"
 		number=$((number+1))
 	else
