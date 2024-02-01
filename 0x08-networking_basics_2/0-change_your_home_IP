@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script changes the IP addresses of localhost and facebook.com 
+
+cp /etc/hosts ~/hosts.new
+grep -l '127.0.0.1' ~/hosts.new | xargs sed -i 's/127.0.0.1/127.0.0.2/g'
+cp -f ~/hosts.new /etc/hosts
+cp /etc/hosts ~/hosts.new
+grep -l '157.240.11.35' ~/hosts.new | xargs sed -i 's/157.240.11.35/8.8.8.8/g'
+cp -f ~/hosts.new /etc/hosts
